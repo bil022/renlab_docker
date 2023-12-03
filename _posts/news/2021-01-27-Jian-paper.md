@@ -1,0 +1,17 @@
+---
+layout: page
+subheadline: Congratulations 
+title:  "Jian and Yunjiang's SNP-SELEX paper published on Nature."
+teaser: "Systematic analysis of binding of transcription factors to noncoding variants"
+breadcrumb: true
+tags:
+    - paper accepted 
+categories:
+    - news 
+---
+<b>Abstract</b>: 
+Many sequence variants have been linked to complex human traits and diseases1, but deciphering their biological functions remains challenging, as most of them reside in noncoding DNA. Here we have systematically assessed the binding of 270 human transcription factors to 95,886 noncoding variants in the human genome using an ultra-high-throughput multiplex protein–DNA binding assay, termed single-nucleotide polymorphism evaluation by systematic evolution of ligands by exponential enrichment (SNP-SELEX). The resulting 828 million measurements of transcription factor–DNA interactions enable estimation of the relative affinity of these transcription factors to each variant in vitro and evaluation of the current methods to predict the effects of noncoding variants on transcription factor binding. We show that the position weight matrices of most transcription factors lack sufficient predictive power, whereas the support vector machine combined with the gapped k-mer representation show much improved performance, when assessed on results from independent SNP-SELEX experiments involving a new set of 61,020 sequence variants. We report highly predictive models for 94 human transcription factors and demonstrate their utility in genome-wide association studies and understanding of the molecular pathways involved in diverse human traits and diseases.
+
+
+
+

@@ -1,0 +1,44 @@
+- name: GitHub
+  url: http://github.com/ren-lab
+  class: icon-github
+  title: Code und mehr...
+
+# - name: Twitter
+#  url: http://twitter.com/
+#  class: icon-twitter
+#  title: "Immer das Neuste von Phlow gibt es auf Twitter"
+
+#- name: Mixcloud
+#  url: http://www.mixcloud.com/phlow/
+#  class: icon-cloud
+#  title: "Mixe, was sonst?"
+
+#- name: Phlow YouTube Google+
+#  url: https://plus.google.com/u/0/+Phlow
+#  class: icon-googleplus
+#  title: "YouTube Google+"
+
+# - name: Facebook
+#   url: http://www.facebook.com/
+#   class: icon-facebook
+#   title: ""
+
+# - name: Soundcloud
+#   url: http://soundcloud.com/
+#   class: icon-soundcloud
+#   title: ""
+
+# - name: Instagram
+#   url: http://instagram.com/
+#   class: icon-instagram
+#   title: ""
+
+# - name: Pinterest
+#   url: http://www.pinterest.com/
+#   class: icon-pinterest
+#   title: ""
+
+# - name: Xing
+#   url: https://www.xing.com/profile/
+#   class: icon-xing
+#   title: Xing Profil

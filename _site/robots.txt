@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://renlab.sdsc.edu/renlab_website//sitemap.xml

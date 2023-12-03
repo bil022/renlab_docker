@@ -1,0 +1,28 @@
+---
+layout: page-fullwidth
+title: "Publications"
+permalink: "/publication/"
+---
+<a href="https://scholar.google.com/citations?hl=en&user=XU7ZT5kAAAAJ"> For a complete list of Bing Ren's publications, click here.</a>
+
+<h3> This year </h3>
+{% for post in site.categories.publication %}
+  {% unless post.next %}
+   <ul>
+  {% else %}
+  {% capture year %}{{ post.date |date: '%Y' }}{% endcapture %}
+  {% capture nyear %}{{ post.next.date |date: '%Y' }}{% endcapture %}
+  {% if year != nyear %}
+   </ul>
+     <h3> {{ post.date |date: '%Y'}} </h3>
+     <ul>
+     {% endif %}
+    {% endunless %}
+    <li>
+      <i><b>{{ post.title }} </b> </i>
+     <br> {{post.pub.authors}} <br>
+      <b> {{post.pub.journal}}</b>, {{post.date|date: '%Y %B %d'}};{{post.pub.volume}}({{post.pub.number}}): {{post.pub.pages}}. doi:<a href="https://doi.org/{{post.pub.doi}}">{{post.pub.doi}}</a>
+    </li>
+    <br>
+  {% endfor %}
+</ul>

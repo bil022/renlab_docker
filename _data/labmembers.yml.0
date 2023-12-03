@@ -1,0 +1,94 @@
+### Put in the lab members 
+
+- name: "First Last"
+  position: Postdotoral Fellow
+  email: lec008@health.ucsd.edu
+
+- name: "Lei Chang"
+  position: Postdotoral Fellow
+  email: lec008@health.ucsd.edu
+
+- name: "Songpeng Zu"
+  position: Postdoctoral Fellow
+  email: szu@health.ucsd.edu
+
+- name: "Zane Gibbs"
+  position: Postdoctoral Fellow
+  email: zgibbs@health.ucsd.edu
+
+- name: "Zhaoning Johnny Wang"
+  position: Postdoctoral Fellow
+  email: zhw063@health.ucsd.edu
+
+- name: "Yang Xie"
+  position: Graduate Student
+  email: y2xie@health.ucsd.edu
+
+- name: "Nathan Zemke"
+  position: Postdoctoral Fellow
+  email: nzemke@health.ucsd.edu
+
+- name: "Bojing Blair Jia"
+  position: MSTP Student
+  email: b2jia@ucsd.edu
+
+- name: "Daniel Cunningham-Bryant"
+  position: Postdoctoral Fellow
+  email: dacunninghambryant@ucsd.edu
+
+- name: "Luisa Amaral"
+  position: Graduate Student
+  email: lamaral@eng.ucsd.edu 
+
+- name: "Adam Jussila"
+  position: Graduate Student
+  email: apjussil@eng.ucsd.edu
+
+- name: "Kai Zhang"
+  position: Postdoctoral Fellow
+  email: kaz007@ucsd.edu
+
+- name: "Yang Eric Li"
+  position: Postdoctoral Fellow
+  email: yal054@ucsd.edu 
+
+- name: "James Hocker"
+  position: MSTP Student
+  email: jhocker@ucsd.edu
+
+- name: "Melodi Tastemel"
+  position: Postdoctoral Fellow
+  email: mtastemel@ucsd.edu
+
+- name: "Benson Chen"
+  position: Postdoctoral Fellow
+  email: b5chen@ucsd.edu
+
+- name: "Hui Huang"
+  position: Graduate Student
+  email: huh025@ucsd.edu
+  
+- name: "Samantha Kuan"
+  position: Lab Manager
+  email: sakuan@ucsd.edu
+
+- name: "Bin Li"
+  position: Postgraduate Researcher
+  email: bil022@ucsd.edu
+
+- name: "Bernadeth Torres"
+  position: Laboratory Administrator
+  email: bet003@ucsd.edu
+
+- name: "Zhen Ye"
+  position: Lab Manager
+  email: zhye@ucsd.edu
+
+- name: "Chenxu Zhu"
+  position: Postdoctoral Fellow
+  email: chz272@ucsd.edu
+
+- name: "Yanxiao Zhang"
+  position: Postdoctoral Fellow 
+  email: shz254@ucsd.edu
+
