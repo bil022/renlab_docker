@@ -19,4 +19,5 @@ fi
 
 bundle install --retry 5 --jobs 20
 bundle exec jekyll build --config _config.yml,_config_renlab.yml -d _site
+./index.pl > _site/publication/index.html
 # exec "$@"
