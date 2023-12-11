@@ -18,7 +18,11 @@ fi
 #echo "YML: $YML"
 
 bundle install --retry 5 --jobs 20
-# bundle exec jekyll build --config _config.yml,_config_renlab.yml -d _site
-bundle exec jekyll build --config _config.yml,_config_renlab_dev.yml -d _site_dev
-./index.pl > _site_dev/publication/index.html
+if ! [ -e "DEV" ]; then
+  bundle exec jekyll build --config _config.yml,_config_renlab.yml -d _site
+  ./index.pl > _site/publication/index.html
+else
+  bundle exec jekyll build --config _config.yml,_config_renlab_dev.yml -d _site_dev
+  ./index.pl > _site_dev/publication/index.html
+fi
 # exec "$@"
