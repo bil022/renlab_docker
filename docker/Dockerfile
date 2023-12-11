@@ -1,10 +1,13 @@
 # FROM ruby:3.1-slim-bullseye as jekyll
-FROM jekyll/jekyll:4.2.2 as jekyll
+#FROM jekyll/jekyll:4.2.2 as jekyll
+FROM ubuntu:22.04
 
-#RUN apt-get update && apt-get install -y --no-install-recommends \
-#    build-essential \
-#    git && mkdir /site \
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential ruby-full zlib1g-dev \
+    git && mkdir /site
 #    && rm -rf /var/lib/apt/lists/*
+
+RUN gem install jekyll bundler
 
 # used in the jekyll-server image, which is FROM this image
 COPY docker-entrypoint.sh /usr/local/bin/
@@ -13,9 +16,9 @@ COPY docker-entrypoint.sh /usr/local/bin/
 
 EXPOSE 4000
 
-#WORKDIR /site
+WORKDIR /site
 
-#COPY Gemfile /site/.
+COPY Gemfile /site/.
 
 # ENTRYPOINT [ "jekyll" ]
 
@@ -24,7 +27,7 @@ EXPOSE 4000
 # build from the image we just built with different metadata
 # FROM jekyll as jekyll-serve
 
-#RUN bundle install
+RUN bundle install
 
 # on every container start, check if Gemfile exists and warn if it's missing
 ENTRYPOINT [ "docker-entrypoint.sh" ]
