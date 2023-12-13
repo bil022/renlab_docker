@@ -23,6 +23,8 @@ credits: '<p>Created with &hearts; by <a href="https://shawnzhangyx.github.io/">
 # See > authors.yml
 author: Yanxiao Zhang 
 
+future: true
+
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
 ## url: 'https://ren-lab.github.io'
