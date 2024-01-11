@@ -11,9 +11,11 @@ while (<DATA>) {
   s/Ren B/<B>Ren B<\/B>/g;
   s/Ren B\./<B>Ren B.<\/B>/g;
   s/Ren, B/<B>Ren, B<\/B>/g;
-  print "<ul><li>$_</li></ul><br/>\n"; 
+  print "<ul><li>$_</li></ul>\n"; 
 }
 __END__
+2024
+Zhang K, Zemke NR, Armand EJ, Ren B. A fast, scalable and versatile tool for analysis of single-cell omics data. Nat Methods. 2024 Jan 8. doi: 10.1038/s41592-023-02139-9. Online ahead of print
 2023
 BB Jia, A Jussila, C Kern, Q Zhu, B Ren. A spatial genome aligner for resolving chromatin architectures from multiplexed DNA FISH. Nature biotechnology, 2023 Jan 2. doi: 10.1038/s41587-022-01568-9. Online ahead of print.
 Kirkland NJ, Skalak SH, Whitehead AJ, Hocker JD, Beri P, Vogler G, Hum B, Wang M, Lakatta EG, Ren B, Bodmer R, Engler AJ. Age-dependent Lamin changes induce cardiac dysfunction via dysregulation of cardiac transcriptional programs. Nat Aging. 2023 Jan;3(1):17-33. 
