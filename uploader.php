@@ -14,17 +14,16 @@
     $input = json_decode('{"json":'.$json.', "thumb":"'.$thumb.'"}');
   } else {
     if (php_sapi_name()=="cli") {
-      $input = new stdClass();
-      $input->json=json_decode(file_get_contents('local.json'));
+      $input=json_decode(file_get_contents('local.json'), true);
     } else {
       //$input = array("content"=>file_get_contents('php://input'));
-      $input = $_REQUEST;
+      $input=json_decode($_POST['json'], true);
     }
 
     $upload="NA";
-    foreach ($input->json as $item) {
-      if ($item->{'name'}=="thumb")
-        $upload=$item->{'value'};
+    foreach ($input as $item) {
+      if ($item['name']=="thumb")
+        $upload=$item['value'];
     }
     $status="OK";
     if ($upload!=$thumb) {
@@ -44,7 +43,15 @@
     } else {
       $status="Unknown link: ".$thumb;
     }
+    // update json file
+    if ($status=="OK") {
+      $ret=file_put_contents('uploader/data.json', json_encode($input));
+      if (!$ret) {
+        $status="Cannot save json file";
+      }
+    }
+    $input='{"status":"'.$status.'"}';
   }
-  print json_encode('{"status":"'.$status.'"}', JSON_PRETTY_PRINT);
+  print json_encode($input, JSON_PRETTY_PRINT);
 ?>
 
