@@ -14,7 +14,8 @@
     $input = json_decode('{"json":'.$json.', "thumb":"'.$thumb.'"}');
   } else {
     if (php_sapi_name()=="cli") {
-      $input = array("json"=>json_decode(file_get_contents('local.json')));
+      $input = new stdClass();
+      $input->json=json_decode(file_get_contents('local.json'));
     } else {
       //$input = array("content"=>file_get_contents('php://input'));
       $input = $_REQUEST;
@@ -23,29 +24,29 @@
     print_r($input);
 
     $upload="NA";
-    foreach ($input["json"] as $item) {
+    foreach ($input->json as $item) {
       if ($item->{'name'}=="thumb")
         $upload=$item->{'value'};
     }
-    $input["status"]="OK";
+    $input->status="OK";
     if ($upload!=$thumb) {
       $headers = @get_headers($thumb, 1); // @ to suppress errors. Remove when debugging.
       if (isset($headers['Content-Type'])) {
         if (strpos($headers['Content-Type'], 'image/png') === FALSE) {
-          $input["status"]="Not a png image: ".$thumb;
+          $input->status="Not a png image: ".$thumb;
         } else {
           // copy image & update thumb
           $content = file_get_contents($upload);
           $ret=file_put_contents('uploader/uploader.png', $content);
           if ($ret) {
-            $input["json"]["thumb"]=$thumb;
+            $input->json["thumb"]=$thumb;
           } else {
-            $input["status"]="Cannot save file: ".$upload;
+            $input->status="Cannot save file: ".$upload;
           }
         }
       }
     } else {
-      $input["status"]="Unknown link: ".$thumb;
+      $input->status="Unknown link: ".$thumb;
     }
   }
   print json_encode($input, JSON_PRETTY_PRINT);
