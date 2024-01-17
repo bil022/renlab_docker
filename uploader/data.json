@@ -1,11 +1,1 @@
-[
-  { "name": "fname", "label":"ID [2023-01-08-zhang_nmethods_2024]", "value": "2023-01-08-zhang_nmethods_2024"},
-  { "name": "title", "label":"Title", "value": "A fast, scalable and versatile tool for analysis of single-cell omics data"},
-  { "name": "authors", "label":"Authors", "value": "Kai Zhang, Nathan R Zemke, Ethan J Armand, Bing Ren"},
-  { "name": "journal", "label":"Journal [Nature Methods]", "value": "Nature Methods"},
-  { "name": "doi", "label":"doi [https://doi.org/10.1038/s41592-023-02139-9]", "value": "https://doi.org/10.1038/s41592-023-02139-9"},
-  { "name": "abstract", "label":"Abstract", "value": "Single-cell omics technologies have revolutionized the study of ..."},
-  { "name": "teaser", "label":"Teaser [A fast, scalable and versatile tool for analysis of single-cell omics data]", "value": "A fast, scalable and versatile tool for analysis of single-cell omics data"},
-  { "name": "full_text_link", "label":"Full text link [https://www.nature.com/articles/s41592-023-02139-9]", "value": "https://www.nature.com/articles/s41592-023-02139-9"},
-  { "name": "thumb", "label":"Thumb png image uploaded to https://imgur.com/upload, https://postimages.org/, or https://imgbb.com/. [https://i.imgur.com/JEW54OT.png] Make sure to 'Copy Image Address'", "value": "https://i.imgur.com/JEW54OT.png"}
-]
+[{"name":"fname","label":"ID","value":"2023-01-08-zhang_nmethods_2024"},{"name":"title","label":"Title","value":"A fast, scalable and versatile tool for analysis of single-cell omics data"},{"name":"authors","label":"Authors","value":"Kai Zhang, Nathan R Zemke, Ethan J Armand, Bing Ren"},{"name":"journal","label":"Journal","value":"Nature Methods"},{"name":"doi","label":"doi","value":"https:\/\/doi.org\/10.1038\/s41592-023-02139-9"},{"name":"abstract","label":"Abstract","value":"Single-cell omics technologies have revolutionized the study of ..."},{"name":"teaser","label":"Teaser","value":"A fast, scalable and versatile tool for analysis of single-cell omics data"},{"name":"full_text_link","label":"Full text link","value":"https:\/\/www.nature.com\/articles\/s41592-023-02139-9"},{"name":"thumb","label":"Thumb image use https:\/\/imgur.com\/upload, https:\/\/postimages.org\/, or https:\/\/imgbb.com\/. Make sure to 'Copy Image Address'","value":"https:\/\/i.imgur.com\/JEW54OT.png"}]

@@ -1,5 +1,5 @@
 [
-  { "name": "fname", "label":"ID [2023-01-08-zhang_nmethods_2024]", "value": "2023-01-08-zhang_nmethods_2024"},
+  { "name": "fname", "label":"ID [2024-01-08-zhang_nmethods_2024]", "value": "2024-01-08-zhang_nmethods_2024"},
   { "name": "title", "label":"Title", "value": "A fast, scalable and versatile tool for analysis of single-cell omics data"},
   { "name": "authors", "label":"Authors", "value": "Kai Zhang, Nathan R Zemke, Ethan J Armand, Bing Ren"},
   { "name": "journal", "label":"Journal [Nature Methods]", "value": "Nature Methods"},
