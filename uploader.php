@@ -7,50 +7,59 @@
     $method=$_SERVER['REQUEST_METHOD'];
   }
 
-  function ID($json) {
-    print($json['fname']);
+  function ID($map) {
+    print($map['fname']);
   }
 
-  function publications($json) {
+  function publications($map) {
+    date_default_timezone_set('America/Los_Angeles');
     $year = date("Y");
-    print("--\nlayout:	page\ntitle:	\”".$json['title']."\"\n");
+    print_r(count($_REQUEST));
+    print("--\nlayout:	page\ntitle:	\”".$map['title']."\"\n");
     print("breadcrumb: true\ncategories:\n- publication\npub:\n");
-    print("authors: ".$json['authors']."\n");
-    print("journal: \"".$json['journal']."\"\n");
+    print("authors: ".$map['authors']."\n");
+    print("journal: \"".$map['journal']."\"\n");
     print("date: ".$year."\n");
-    print("doi: ".$json['doi']."\n");
-    print("abstract: ".$json['abstract']."\n--\n");
+    print("doi: ".$map['doi']."\n");
+    print("abstract: ".$map['abstract']."\n--\n");
   }
 
-  function news() {
+  function news($map) {
     print("---\nlayout:	page\nsubheadline:	Congratulations!\n");
-    print("title: \"".$json['title']."\"\n");
-    print("teaser: \"".$json['teaser']."\"\n");
+    print("title: \"".$map['title']."\"\n");
+    print("teaser: \"".$map['teaser']."\"\n");
     print("breadcrumb: true\ntags:\n");	
     print("- paper accepted\n");
     print("categories:\n");
     print("    - news\n");
     print("image:\n");
-    print("    thumb: 	".$json['fname'].".png\n");
-    print("    title:	".$json['fname'].".png\n");
+    print("    thumb: 	".$map['fname'].".png\n");
+    print("    title:	".$map['fname'].".png\n");
     print("    caption_url: 	http://unsplash.com\n");
     print("---\n\n");
     print("<b>Abstract</b>:\n");	
-    print($json['abstract']."\n");
-    print("> Full text can be accessed from the following [link](".$json['full_text_link'].")\n");
+    print($map['abstract']."\n");
+    print("> Full text can be accessed from the following [link](".$map['full_text_link'].")\n");
   }
 
   $thumb='https://renlab.sdsc.edu/renlab_docker/uploader/uploader.png';
   if ($method == "GET") {
     $json=file_get_contents('uploader/data.json', true);
-    if (isset($_REQUEST["publications"])) {
-      print(publications($json)); exit;
-    } elseif (isset($_REQUEST["news"])) {
-      print(news($json)); exit;
-    } elseif (isset($_REQUEST["ID"])) {
-      print(ID($json)); exit;
-    } else {
+    if (!count($_REQUEST)) {
       $input = json_decode('{"json":'.$json.', "thumb":"'.$thumb.'"}');
+    } else {
+      $map=array();
+      foreach (json_decode($json) as $item) {
+        $map[$item->name]=$item->value;
+      }
+      if (isset($_REQUEST["publications"])) {
+        print(publications($map));
+      } elseif (isset($_REQUEST["news"])) {
+        print(news($map));
+      } elseif (isset($_REQUEST["ID"])) {
+        print(ID($map));
+      }
+      exit;
     }
   } else {
     if (php_sapi_name()=="cli") {
