@@ -3,7 +3,7 @@
   { "name": "title", "label":"Title", "value": "A fast, scalable and versatile tool for analysis of single-cell omics data"},
   { "name": "authors", "label":"Authors", "value": "Kai Zhang, Nathan R Zemke, Ethan J Armand, Bing Ren"},
   { "name": "journal", "label":"Journal [Nature Methods]", "value": "Nature Methods"},
-  { "name": "doi", "label":"doi", "value [https://doi.org/10.1038/s41592-023-02139-9]": "https://doi.org/10.1038/s41592-023-02139-9"},
+  { "name": "doi", "label":"doi [https://doi.org/10.1038/s41592-023-02139-9]", "value": "https://doi.org/10.1038/s41592-023-02139-9"},
   { "name": "abstract", "label":"Abstract", "value": "Single-cell omics technologies have revolutionized the study of ..."},
   { "name": "teaser", "label":"Teaser [A fast, scalable and versatile tool for analysis of single-cell omics data]", "value": "A fast, scalable and versatile tool for analysis of single-cell omics data"},
   { "name": "full_text_link", "label":"Full text link [https://www.nature.com/articles/s41592-023-02139-9]", "value": "https://www.nature.com/articles/s41592-023-02139-9"},
