@@ -9,7 +9,7 @@ permalink: "/team/"
 ##### Principle Investigator
 <br>
  <img src="{{site.urlimg}}team-bingren.jpg">
-<b> <a href="{{site.url}}{{site.baseurl}}bing/"> Bing Ren, PhD. </a> </b>
+<b> <a href="mailto:biren@health.ucsd.edu"> Bing Ren, PhD. </a> </b>
 <hr>
 ##### Current members
 <br>
