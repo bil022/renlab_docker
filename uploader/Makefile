@@ -7,3 +7,5 @@ all:
 	wget https://renlab.sdsc.edu/renlab_docker/uploader.php?news -O _posts/news/`cat .ID`.md
 	cp uploader.png images/`cat .ID`.png	
 	rm -f .ID
+	rsync -anv _posts images ..
+	echo "rsync -av _posts images .."

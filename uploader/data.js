@@ -18,6 +18,7 @@ const news = fs.readFileSync("news.md", "utf8");
 
 console.log(news);
 
+console.log("https://renlab.sdsc.edu/renlab_docker/uploader.php?publications");
 /*
 console.log("---	
 layout:	page

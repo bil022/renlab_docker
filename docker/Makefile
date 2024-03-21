@@ -8,3 +8,5 @@ debug:
 	#docker run -e "YML=renlab" -p 4000:4000 -v /Users/bli/src/renlab:/site renlab_website
 test:
 	echo $$(readlink -f ..)
+docker:
+	sudo systemctl start docker
