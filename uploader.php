@@ -14,7 +14,7 @@
   function publications($map) {
     date_default_timezone_set('America/Los_Angeles');
     $year = date("Y");
-    print_r(count($_REQUEST));
+    //print_r(count($_REQUEST));
     print("--\nlayout:	page\ntitle:	\”".$map['title']."\"\n");
     print("breadcrumb: true\ncategories:\n- publication\npub:\n");
     print("authors: ".$map['authors']."\n");
