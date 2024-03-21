@@ -26,8 +26,8 @@
 
   function news($map) {
     print("---\nlayout:	page\nsubheadline:	Congratulations!\n");
-    print("title: \"".$map['title']."\"\n");
-    print("teaser: \"".$map['teaser']."\"\n");
+    print("title:\t\"".$map['teaser']."\"\n");
+    print("teaser:\t\"".$map['title']."\"\n");
     print("breadcrumb: true\ntags:\n");	
     print("- paper accepted\n");
     print("categories:\n");
