@@ -1,8 +1,8 @@
 ---
 layout:	page
 subheadline:	Congratulations!
-title:	"Naoki Kubo's KMT2C/D and KMT2B (MLL3/4 and MLL2) paper is published in Molecular Cell!"
-teaser:	"H3K4me1 facilitates promoter-enhancer interactions and gene activation during embryonic stem cell differentiation"
+title: "H3K4me1 facilitates promoter-enhancer interactions and gene activation during embryonic stem cell differentiation"
+teaser: "H3K4me1 facilitates promoter-enhancer interactions and gene activation during embryonic stem cell differentiation"
 breadcrumb: true
 tags:
 - paper accepted
