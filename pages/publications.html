@@ -4,7 +4,7 @@ title: "Publications"
 permalink: "/publication/"
 ---
 <a href="https://scholar.google.com/citations?hl=en&user=XU7ZT5kAAAAJ"> For a complete list of Bing Ren's publications, click here.</a> <br>
-<a href="/renlab_website/publication/preprint/">For preprints, please click here.  </a><br>
+<a href="/publication/preprint/">For preprints, please click here.  </a><br>
 Below is a list of representative peer-reviewed publications. (*equal contribution. <sup>#</sup>co-correspondence.)
 
 {% capture lyear %} {{site.categories.publication.first.date |date: '%Y' }} {% endcapture %}
@@ -19,11 +19,11 @@ Below is a list of representative peer-reviewed publications. (*equal contributi
      {% capture lyear %}{{ post.date |date: '%Y' }}{% endcapture %}
      {% endif %}
     <li>
-      <i><b>{{ post.title }} </b> </i>
-     <br> {{post.pub.authors}} <br>
-      <b> {{post.pub.journal}}</b>, {{post.date|date: '%Y'}};doi:<a href="https://doi.org/{{post.pub.doi}}">{{post.pub.doi}}</a>
+      {{ post.pub.authors | replace: "Bing Ren", "<b>Bing Ren</b>" | replace: "Ren B", "<b>Ren B</b>" | replace: "Ren, B", "<b>Ren, B</b>" | replace: "B Ren", "<b>B Ren</b>" | replace: "B. Ren", "<b>B. Ren</b>" }}.
+      {{ post.title }}.
+      <i>{{ post.pub.journal }}</i>, {{ post.date | date: '%Y' }}.
+      {% if post.pub.doi and post.pub.doi != "NA" %}doi: <a href="https://doi.org/{{ post.pub.doi }}">{{ post.pub.doi }}</a>.{% endif %}
     </li>
-    <br>
   {% endfor %}
 </ul>
 
